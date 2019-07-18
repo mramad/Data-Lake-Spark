@@ -36,6 +36,7 @@ dwh.cfg: This file has the AWS cloud configuration data as the following:
     -config data for AWS access (This has been removed for secuitry purposes)
     
 etl_AWS.py: This file has the code to perform the following:
+
     - connect to Amazon S3 to retreive the App log and song data
     - Process data using Spark SQL APIs to create required tables and perform necessary transformations
     - Writes the tables back to parquet files into a special created Amazon S3 bucket "dlproject-mar"
